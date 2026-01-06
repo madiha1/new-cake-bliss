@@ -12,42 +12,15 @@ $(window).on('load', function () {
     });
 });
 
-// blogslider start
-$('.blogs').slick({
-    dots: true,
-    arrows: true,
-    infinite: false,
+$('.product-sli').slick({
     speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 4,
-    responsive: [{
-        breakpoint: 1100,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-        }
-    },
-    {
-        breakpoint: 900,
-        settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-        }
-    },
-    {
-        breakpoint: 500,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true
-        }
-    }
-    ]
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
 });
-
-// blogslider end
 
 
 // wow animation js 
