@@ -2167,7 +2167,7 @@ th.w-40 {
 }
 
 .recipt {
-    width: 30%;
+    width: 100%;
 }
 
 .cart_product_img img {
@@ -2376,13 +2376,15 @@ th {
     background: transparent;
 }
 
-
-
 .cart-to-check-box {
     display: flex;
     margin-top: 25px;
     align-items: center;
     justify-content: center;
+}
+
+.billing-input.payment-method-select {
+    padding-top: 30px;
 }
 
 /*CART PAGE CSS END*/
@@ -2937,8 +2939,6 @@ ul#pills-tab {
 
 
 /*product-detail end*/
-
-/* live music sec */
 
 .live-music-sec {
     display: flex;

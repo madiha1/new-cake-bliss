@@ -96,13 +96,7 @@
                         <div class="cart_recipt">
                             <a href="product.html"><i class="fas fa-chevron-left" aria-hidden="true"></i> Continue
                                 Shopping</a>
-                            <div class="recipt">
-                                <ul>
-                                    <li>Subtotal <span>$68.98</span></li>
-                                    <li>Shipping <span>$9.00</span></li>
-                                    <li>Total <span>$77.99</span></li>
-                                </ul>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -110,81 +104,100 @@
                 <div class="col-lg-4 col-md-5 col-sm-12 col-12">
                     <div class="payment_card">
                         <h3>Payment Info</h3>
+                        <div class="recipt">
+                            <ul>
+                                <li>Subtotal <span>$68.98</span></li>
+                                <li>delivery <span>$9.00</span></li>
+                                <li>Total <span>$77.99</span></li>
+                            </ul>
+                        </div>
                         <div class="credit_paypal">
                             <a href=""><i class="fa-regular fa-credit-card"></i>Credit card</a>
                             <a href=""><i class="fa-brands fa-paypal"></i> Paypal</a>
                         </div>
-                        <form>
-                            <label>Name On Card:</label>
-                            <input type="text" name="name_card" placeholder="Your Card Name">
-
-                            <label>Card Number:</label>
-                            <input type="text" id="cartCardNumber" name="car_number" placeholder="**** **** **** 3271"
-                                maxlength="16">
-                            <div class="expiry_cvv">
-                                <div class="expiry_date">
-                                    <div class="label_expiry">
-                                        <label>Expiration Date:</label>
-                                    </div>
-                                    <div class="month_year">
-                                        <select>
-                                            <option selected="" disabled="">MM</option>
-                                            <option value="1">Janaury</option>
-                                            <option value="2">February</option>
-                                            <option value="3">March</option>
-                                            <option value="4">April</option>
-                                            <option value="5">May</option>
-                                            <option value="6">June</option>
-                                            <option value="7">July</option>
-                                            <option value="8">August</option>
-                                            <option value="9">September</option>
-                                            <option value="10">October</option>
-                                            <option value="11">November</option>
-                                            <option value="12">December</option>
-                                        </select>
-                                        <select id="year" name="year">
-                                            <option value="">YYYY</option>
-                                            <option value="2020">2020</option>
-                                            <option value="2021">2021</option>
-                                            <option value="2022">2022</option>
-                                            <option value="2023">2023</option>
-                                            <option value="2024">2024</option>
-                                            <option value="2025">2025</option>
-                                            <option value="2026">2026</option>
-                                            <option value="2027">2027</option>
-                                            <option value="2028">2028</option>
-                                            <option value="2029">2029</option>
-                                            <option value="2030">2030</option>
-                                            <option value="2031">2031</option>
-                                            <option value="2032">2032</option>
-                                            <option value="2033">2033</option>
-                                            <option value="2034">2034</option>
-                                            <option value="2035">2035</option>
-                                            <option value="2036">2036</option>
-                                            <option value="2037">2037</option>
-                                            <option value="2038">2038</option>
-                                            <option value="2039">2039</option>
-                                            <option value="2040">2040</option>
-                                            <option value="2041">2041</option>
-                                            <option value="2042">2042</option>
-                                            <option value="2043">2043</option>
-                                            <option value="2044">2044</option>
-                                            <option value="2045">2045</option>
-                                            <option value="2046">2046</option>
-                                            <option value="2047">2047</option>
-                                            <option value="2048">2048</option>
-                                            <option value="2049">2049</option>
-                                            <option value="2050">2050</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="cvv_box">
-                                    <label>CVV</label>
-                                    <input type="text" id="cartCvv" name="cvv" placeholder="XXXX" maxlength="4"
-                                        inputmode="numeric" pattern="[0-9]{4}">
-                                </div>
+                        <div class="billing-input payment-method-select" style="margin-bottom: 15px;">
+                            <div class="form-group">
+                                <input type="radio" id="cart-cod" name="cart_payment" checked>
+                                <label for="cart-cod">Cash on Delivery</label>
                             </div>
-                        </form>
+                            <div class="form-group">
+                                <input type="radio" id="cart-online" name="cart_payment">
+                                <label for="cart-online">Online Payment</label>
+                            </div>
+                        </div>
+                        <div id="cart-card-form" style="display: none;">
+                            <form>
+                                <label>Name On Card:</label>
+                                <input type="text" name="name_card" placeholder="Your Card Name">
+
+                                <label>Card Number:</label>
+                                <input type="text" id="cartCardNumber" name="car_number"
+                                    placeholder="**** **** **** 3271" maxlength="16">
+                                <div class="expiry_cvv">
+                                    <div class="expiry_date">
+                                        <div class="label_expiry">
+                                            <label>Expiration Date:</label>
+                                        </div>
+                                        <div class="month_year">
+                                            <select>
+                                                <option selected="" disabled="">MM</option>
+                                                <option value="1">Janaury</option>
+                                                <option value="2">February</option>
+                                                <option value="3">March</option>
+                                                <option value="4">April</option>
+                                                <option value="5">May</option>
+                                                <option value="6">June</option>
+                                                <option value="7">July</option>
+                                                <option value="8">August</option>
+                                                <option value="9">September</option>
+                                                <option value="10">October</option>
+                                                <option value="11">November</option>
+                                                <option value="12">December</option>
+                                            </select>
+                                            <select id="year" name="year">
+                                                <option value="">YYYY</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+                                                <option value="2031">2031</option>
+                                                <option value="2032">2032</option>
+                                                <option value="2033">2033</option>
+                                                <option value="2034">2034</option>
+                                                <option value="2035">2035</option>
+                                                <option value="2036">2036</option>
+                                                <option value="2037">2037</option>
+                                                <option value="2038">2038</option>
+                                                <option value="2039">2039</option>
+                                                <option value="2040">2040</option>
+                                                <option value="2041">2041</option>
+                                                <option value="2042">2042</option>
+                                                <option value="2043">2043</option>
+                                                <option value="2044">2044</option>
+                                                <option value="2045">2045</option>
+                                                <option value="2046">2046</option>
+                                                <option value="2047">2047</option>
+                                                <option value="2048">2048</option>
+                                                <option value="2049">2049</option>
+                                                <option value="2050">2050</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="cvv_box">
+                                        <label>CVV</label>
+                                        <input type="text" id="cartCvv" name="cvv" placeholder="XXXX" maxlength="4"
+                                            inputmode="numeric" pattern="[0-9]{4}">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                         <div class="cart-to-check-box">
                             <a href="checkout.html" class="theme-btn-1">
                                 <span>Submit Now</span>
@@ -209,6 +222,15 @@
     <script src="js/custom.js"></script>
     <script>
         $(document).ready(function () {
+            // Toggle card form based on payment method
+            $('input[name="cart_payment"]').change(function () {
+                if ($('#cart-online').is(':checked')) {
+                    $('#cart-card-form').slideDown();
+                } else {
+                    $('#cart-card-form').slideUp();
+                }
+            });
+
             // Card Number: numbers only, max 16 digits
             $('#cartCardNumber').on('keydown', function (e) {
                 var allowed = (e.key >= '0' && e.key <= '9') ||
