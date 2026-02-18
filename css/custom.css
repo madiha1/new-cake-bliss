@@ -2376,28 +2376,13 @@ th {
     background: transparent;
 }
 
-/* .skin-2 .num-in span:before,
-.skin-2 .num-in span:after {
-    content: '';
-    position: absolute;
-    background-color: #667780;
-    height: 2px;
-    width: 10px;
-    top: 50%;
-    left: 50%;
-    margin-top: -1px;
-    margin-left: -5px;
-} */
+
 
 .cart-to-check-box {
     display: flex;
     margin-top: 25px;
     align-items: center;
     justify-content: center;
-}
-
-.cart-to-check-box a {
-    /* font-family: 'Playfair'; */
 }
 
 /*CART PAGE CSS END*/
@@ -2537,7 +2522,7 @@ th {
     color: #403a34;
     margin-top: 10px;
     margin-bottom: 0px;
-    font-family: 'Blender_Pro';
+    font-family: 'Kalam';
     text-transform: uppercase;
 }
 
@@ -2616,7 +2601,7 @@ th {
 
 .functionality-box .num-in span.in-num {
     font-size: 16px;
-    font-family: 'Blender_Pro';
+    font-family: 'Kalam';
 }
 
 .functionality-box .minus,
@@ -2624,7 +2609,7 @@ th {
     margin: 0;
     font-size: 16px;
     color: #141414;
-    font-family: 'Roboto';
+    font-family: 'Kalam';
 }
 
 
@@ -2824,7 +2809,7 @@ ul.det-social li i {
 .pro-det-wrt ul li h5 {
     margin-bottom: 0;
     color: #151414;
-    font-family: 'Montserrat';
+    font-family: 'Kalam';
 }
 
 .pro-det-wrt ul li p {
@@ -2844,7 +2829,7 @@ ul.det-social li i {
     color: #2d2c2c;
     border-radius: 0;
     padding: 13px 3rem;
-    font-family: 'Blender_Pro';
+    font-family: 'Kalam';
     text-transform: uppercase;
 }
 
@@ -2856,7 +2841,7 @@ ul.det-social li i {
     font-size: 20px;
     color: #754c28;
     border-radius: 10px;
-    font-family: "El Messiri";
+    font-family: "Kalam";
     background-color: #f4e6ce;
 }
 
@@ -3434,8 +3419,8 @@ footer .row {
 .nestletter input {
     width: 81%;
     height: 60px;
-    padding: 10px;
     border: unset;
+    padding: 10px 30px;
     border-radius: 50px;
     color: var(--white);
     background: var(--white);
@@ -3497,6 +3482,11 @@ footer .row {
     justify-content: space-between;
     padding: 30px;
     border-top: 1px solid #ffffff73;
+}
+
+.bottom-ftr a img {
+    height: 70px;
+    object-fit: contain;
 }
 
 .bottom-ftr p {

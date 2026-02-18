@@ -119,7 +119,8 @@
                             <input type="text" name="name_card" placeholder="Your Card Name">
 
                             <label>Card Number:</label>
-                            <input type="number" name="car_number" placeholder="**** **** **** 3271">
+                            <input type="text" id="cartCardNumber" name="car_number" placeholder="**** **** **** 3271"
+                                maxlength="16">
                             <div class="expiry_cvv">
                                 <div class="expiry_date">
                                     <div class="label_expiry">
@@ -179,8 +180,8 @@
                                 </div>
                                 <div class="cvv_box">
                                     <label>CVV</label>
-                                    <input type="text" name="cvv" placeholder="XXXX" maxlength="4" inputmode="numeric"
-                                        pattern="[0-9]{4}">
+                                    <input type="text" id="cartCvv" name="cvv" placeholder="XXXX" maxlength="4"
+                                        inputmode="numeric" pattern="[0-9]{4}">
                                 </div>
                             </div>
                         </form>
@@ -206,6 +207,29 @@
     <script src="js/fancybox.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Card Number: numbers only, max 16 digits
+            $('#cartCardNumber').on('keydown', function (e) {
+                var allowed = (e.key >= '0' && e.key <= '9') ||
+                    e.key === 'Backspace' || e.key === 'Delete' ||
+                    e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'Tab';
+                if (!allowed) e.preventDefault();
+            }).on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '').substring(0, 16);
+            });
+
+            // CVV: numbers only, max 4 digits
+            $('#cartCvv').on('keydown', function (e) {
+                var allowed = (e.key >= '0' && e.key <= '9') ||
+                    e.key === 'Backspace' || e.key === 'Delete' ||
+                    e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'Tab';
+                if (!allowed) e.preventDefault();
+            }).on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '').substring(0, 4);
+            });
+        });
+    </script>
 </body>
 
 </html>
