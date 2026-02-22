@@ -2983,7 +2983,7 @@ ul#pills-tab {
     max-width: 830px;
     padding-top: 5px;
     position: relative;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -3188,6 +3188,119 @@ section.banner.inner-banner h1 span {
 
 /* 404 sec */
 
+/* Account Starts  */
+
+.sinup-input input {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d1;
+}
+
+.sinup-input label {
+    font-size: 16px;
+    color: #888888;
+    padding-bottom: 5px;
+}
+
+.sinup-input {
+    padding: 10px 0;
+}
+
+.sinup-input-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+    accent-color: var(--headingColor);
+    color: white;
+}
+
+.sinup-input-checkbox label {
+    font-size: 16px;
+}
+
+.sinup-input-checkbox {
+    padding-top: 10px;
+}
+
+.sinup-input button {
+    border: 1px solid transparent;
+    color: white;
+}
+
+.create-account-heading h2 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.create-account {
+    border-radius: 15px;
+    padding: 50px 30px 30px;
+    border: 1px solid #d9d9d9;
+}
+
+section.account-sec {
+    padding: 100px 0;
+}
+
+.login-input input {
+    height: 45px;
+    border: 1px solid #d1d1d1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.login-input {
+    padding: 10px 0;
+}
+
+.login-input label {
+    font-size: 16px;
+    color: #888888;
+    padding-bottom: 5px;
+}
+
+.login-heading h2 {
+    color: black;
+    text-transform: uppercase;
+}
+
+.login-input button {
+    border: 1px solid transparent;
+    color: white;
+}
+
+.login-input-checkbox {
+    padding-top: 10px;
+}
+
+.login-input-checkbox input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+    accent-color: var(--headingColor);
+}
+
+.login-account {
+    border-radius: 15px;
+    padding: 50px 30px 30px;
+    border: 1px solid #d9d9d9;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+/* Account Ends */
 
 /*contact-page start*/
 
@@ -3363,7 +3476,6 @@ section.how-it-work {
 .coming-soon-box p {
     margin-bottom: 10px;
 }
-
 
 /* coming-soon */
 
@@ -3552,13 +3664,312 @@ button.btn-ftr {
 
 /*Media Query Start*/
 
-@media only screen and (min-width: 1366px) and (max-width: 1920px) {}
+@media only screen and (min-width: 1366px) and (max-width: 1556px) {
+    .banner-sec::before {
+        width: 100px;
+        height: 200px;
+    }
 
-@media only screen and (min-width: 1291) and (max-width: 1365px) {}
+    .category-sec {
+        padding: 100px 90px 0px;
+    }
 
-@media only screen and (min-width: 992px) and (max-width: 1290px) {}
+}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+
+    .about-sec {
+        padding: 80px 0px;
+    }
+
+    .menuSlide {
+        width: 70vw;
+    }
+
+    .category-sec {
+        padding: 80px 0px 0px;
+    }
+
+    .product-detailsec {
+        padding: 80px 4%;
+    }
+
+    .banner .banner_textt>.banner_left_imgs>img {
+        width: 160px;
+        height: 110px;
+    }
+
+    .banner-sec::before {
+        width: 90px;
+        height: 230px;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .about-sec {
+        padding: 70px 0px;
+    }
+
+    .banner {
+        padding: 60px 0px 0px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .banner_textt h1 span {
+        font-size: 70px;
+    }
+
+    .banner-sec::before {
+        top: -33px;
+        width: 62px;
+        height: 140px;
+    }
+
+    .banner .banner_textt>.banner_left_imgs>img {
+        width: 160px;
+        height: 110px;
+    }
+
+    .reviwSlider .slick-slide {
+        opacity: 1;
+    }
+
+    .menuSlide {
+        width: 70vw;
+    }
+
+    .menu-sec {
+        padding: 70px 0px;
+    }
+
+    .banner .banner_right_wrpr>.vid {
+        height: 550px;
+        padding: 15px;
+    }
+
+    .category-sec {
+        padding: 70px 0px 0px;
+    }
+
+    .why-choose-sec {
+        padding: 70px 0px;
+    }
+
+    .product-detailsec {
+        padding: 70px 4%;
+    }
+
+    .credit_paypal a {
+        font-size: 12px;
+    }
+
+    .shopping_cart_table {
+        padding-right: 0px;
+    }
+
+    .shopping_cart_table table tbody td .t_price {
+        font-size: 25px;
+    }
+
+    .shopping_cart_table table th {
+        font-size: 12px;
+    }
+
+    .shopping_cart_table table tbody .cart_box_product .cart_product_img {
+        width: 40%;
+    }
+
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .reviwSlider .slick-slide {
+        opacity: 1;
+    }
+
+    .bottom-ftr {
+        padding: 20px;
+    }
+
+    .ftr-icons {
+        padding: 20px 20px;
+    }
+
+    .nestletter {
+        padding: 20px;
+    }
+
+    .nestletter p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .ftr-links {
+        padding: 20px;
+    }
+
+    .login-account,
+    .create-account {
+        padding: 30px 20px 20px;
+    }
+
+    .login-heading h2,
+    .create-account-heading h2 {
+        font-size: 30px;
+    }
+
+    .login-input input,
+    .sinup-input input {
+        height: 50px;
+    }
+
+    .sinup-input-checkbox label {
+        font-size: 12px;
+    }
+
+    .header-right-box ul {
+        gap: 10px;
+    }
+
+    .menuSec ul li a {
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+
+    .menuSection {
+        padding: 5px 0px;
+    }
+
+    section.account-sec {
+        padding: 60px 0px;
+    }
+
+    section.contact-pg .custom-mt-5 {
+        margin-top: 60px;
+    }
+
+    .cont-bx {
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .about-img {
+        height: 400px;
+    }
+
+    .live-music-text {
+        align-items: center;
+    }
+
+
+    .table-responsive table {
+        width: 100% !important;
+    }
+
+    .shopping_cart_table {
+        padding-right: 0px;
+    }
+
+    .payment_card {
+        margin-top: 25px;
+    }
+
+    .billing-input {
+        margin-bottom: 20px;
+    }
+
+    .billing-sec {
+        padding: 60px 0px;
+    }
+
+    .menu-sec {
+        padding: 60px 0px;
+    }
+
+    .menuSlide .slick-slide {
+        margin: 0px 10px;
+    }
+
+    .menu-produc-box {
+        padding: 10px 10px 30px;
+    }
+
+    .menuSlide {
+        width: 70vw;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .banner_textt h1 span {
+        font-size: 55px;
+    }
+
+    .banner-sec::before {
+        width: 60px;
+        height: 110px;
+    }
+
+    .banner .banner_textt>.banner_left_imgs>img {
+        width: 90px;
+        height: 60px;
+    }
+
+    .category-sec {
+        padding: 70px 0px;
+    }
+
+    .categorySlider .slick-next,
+    .categorySlider .slick-prev {
+        top: 103%;
+        right: 0px;
+        height: 50px;
+    }
+
+    .categorySlider .slick-prev {
+        left: 0px;
+    }
+
+    .banner .banner_right_wrpr>.vid {
+        height: 500px;
+        padding: 10px;
+    }
+
+    .product-detailsec {
+        padding: 60px 4%;
+    }
+
+    .product-content {
+        margin-top: 30px;
+    }
+
+
+
+
+}
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .top-bar-left ul {
@@ -3845,6 +4256,48 @@ button.btn-ftr {
     section.contact-pg .custom-mt-5 {
         margin-top: 50px;
     }
+
+    .sinup-input-checkbox label {
+        font-size: 12px;
+    }
+
+    .sinup-input-checkbox label {
+        font-size: 12px;
+    }
+
+    .login-account {
+        margin-top: 20px;
+        padding: 30px 10px 10px;
+    }
+
+    .create-account {
+        padding: 30px 10px 10px;
+    }
+
+    .sinup-input input {
+        height: 45px;
+    }
+
+    .create-account-heading h2 {
+        font-size: 30px;
+    }
+
+    .sinup-input label {
+        font-size: 13px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    section.account-sec {
+        padding: 40px 0px;
+    }
+
+    .billing-input {
+        margin-bottom: 10px;
+    }
+
 
 
 
@@ -4139,55 +4592,42 @@ button.btn-ftr {
         margin-top: 40px;
     }
 
+    .sinup-input-checkbox label {
+        font-size: 12px;
+    }
 
+    .login-account {
+        margin-top: 20px;
+        padding: 30px 10px 10px;
+    }
 
+    .create-account {
+        padding: 30px 10px 10px;
+    }
 
+    .sinup-input input {
+        height: 45px;
+    }
 
+    .create-account-heading h2 {
+        font-size: 30px;
+    }
 
+    .sinup-input label {
+        font-size: 13px;
+    }
 
+    .search-box {
+        flex-direction: column;
+    }
 
+    section.account-sec {
+        padding: 40px 0px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .billing-input {
+        margin-bottom: 10px;
+    }
 
 
 
